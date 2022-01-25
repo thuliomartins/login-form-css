@@ -1,6 +1,6 @@
 # Login Form CSS
 
-## development of a custom login screen, using only::
+## Development of a custom login screen, using only::
 
 * HTML
 * CSS

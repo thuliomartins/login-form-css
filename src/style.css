@@ -1,0 +1,178 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #191816;
+}
+
+main {
+    display: grid;
+    height: 100vh;
+    width: 100%;
+    grid-template-areas: "form image teste";
+    grid-template-columns: 1fr 1fr;
+}
+
+
+#form-login {
+    display: flex;
+    grid-area: "form";
+    align-items: center;
+    justify-content: center;
+}
+
+#container-background {
+    background-color: #24221F;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 572px;
+    height: 512px;
+    border-radius: 4px;
+}
+
+#container-form {
+    width: 334px;
+}
+
+#form-header div {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+#form-header div p {
+    font-family: 'Poppins';
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 36px;
+    color: #D4CCB6;
+}
+
+#form-header p {
+    font-family: 'Roboto';
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    color: #AFB6C2;
+}
+
+.input-group label {
+    display: block;
+    margin: 10px 0 0 0;
+    font-family: 'Poppins';
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    color: #AFB6C2;
+}
+
+.input-group input {
+    background-color: transparent;
+    border: 1px solid #868686;
+    border-radius: 4px;
+    margin-top: 3px;
+    padding: 10px;
+    width: 100%;
+    height: 44px;
+    color: #fff;
+}
+
+.input-with-icon {
+    position: relative;
+}
+
+.input-with-icon input {
+    padding-left: 40px;
+}
+
+.input-with-icon img {
+    position: absolute;
+    left: 20;
+    top: 14px;
+    padding: 0 10px;
+}
+
+.input-group input:focus {
+    outline: none;
+    border: 2px solid #FFC632;
+}
+
+#container-fp {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 15px;
+}
+
+#container-fp div label {
+    font-family: 'Roboto';
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 21px;
+    color: #A9AFB9;
+}
+
+#container-fp div input {
+    display: none;
+}
+
+#container-fp div input + label:before {
+    content: '';
+    width: 18px;
+    height: 18px;
+    border-radius: 4px;
+    background-color: transparent;
+    border: 1px solid #868686;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 5px;
+    margin-bottom: 3px;
+}
+
+#container-fp div input:checked + label:before {
+    background-image: url("data:image/svg+xml,%0A%3Csvg xmlns='http://www.w3.org/2000/svg' width='18' height='18' viewBox='0 0 10 10'%3E%3Cg class='nc-icon-wrapper' stroke-width='1' fill='%23555555'%3E%3Cpath fill='none' stroke='%23000000' stroke-linecap='round' stroke-linejoin='round' stroke-miterlimit='10' data-cap='butt' d='M2.83 4.72l1.58 1.58 2.83-2.83'/%3E%3C/g%3E%3C/svg%3E");
+    background-color: #FFC632;
+    background-position: center;
+    border: none;
+    padding: 1px;
+}
+
+#container-fp a {
+    text-decoration: none;
+    font-family: Poppins;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 21px;
+    color: #FFC632;
+}
+
+#log-in {
+    width: 100%;
+    height: 51px;
+    margin-top: 20px;
+    background-color: #FFC632;
+    border-radius: 4px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 27px;
+    text-transform: uppercase;
+    letter-spacing: 0.015em;
+}
+
+#register {
+    font-family: 'Poppins';
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 21px;
+    color: #FFC632;
+    margin-top: 15px;
+    text-align: center;
+}
+
+#img-login {
+    grid-area: "image";
+}
